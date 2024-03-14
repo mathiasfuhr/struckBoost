@@ -1,20 +1,21 @@
 .btn-primary {
   display: inline-block;
   padding: 1.6rem 2.4rem;
-  background-color: var(--pink-10);
-  color: var(--gray-900);
+  background-color: var(--light-color-1);
+  color: var(--dark-color-1);
   font-size: 1.6rem;
   font-weight: 600;
   line-height: 100%;
   letter-spacing: -0.48px;
   transition: background-color 0.3s ease;
 }
+
 .btn-primary.white {
   background-color: #fff;
 }
 
 .btn-primary.white:hover {
-  background-color: var(--gray-900);
+  background-color: var(--dark-color-1);
   color: #fff;
 }
 
@@ -24,29 +25,7 @@
 }
 
 .btn-primary:hover {
-  background-color: var(--pink-20);
-}
-
-.item-digital {
-  width: 100%;
-  max-width: 36.4rem;
-}
-
-.item-digital .icon {
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 1.6rem;
-}
-
-.item-digital .info h6 {
-  margin-bottom: 0.8rem;
-}
-
-.item-digital .info p {
-  color: var(--gray-600);
+  background-color: var(--light-color-2);
 }
 
 .card-post {
@@ -61,7 +40,7 @@
   border-radius: 100px;
   padding: 0.8rem 2.2rem;
   font-family: "Sora", sans-serif;
-  color: var(--gray-100);
+  color: var(--dark-color-9);
   font-size: 1.4rem;
   font-weight: 600;
   line-height: 100%;
@@ -89,7 +68,7 @@
 
 .card-post .text p {
   font-size: 1.8rem;
-  color: var(--gray-600);
+  color: var(--dark-color-4);
 }
 
 @media (max-width: 991px) {

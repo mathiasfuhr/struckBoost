@@ -6,7 +6,7 @@ header {
   border-bottom: 1px solid rgba(255, 255, 255, 0.24);
   position: fixed;
   z-index: 1000;
-  background-color: var(--gray-900);
+  background-color: var(--dark-color-1);
 }
 
 header .container {
@@ -31,7 +31,7 @@ header nav ul {
 }
 
 header nav ul li a {
-  color: var(--gray-100);
+  color: var(--dark-color-9);
   font-size: 1.6rem;
   letter-spacing: -0.48;
   transition: opacity 0.3s ease;
@@ -55,7 +55,7 @@ header nav ul li a:hover {
   content: "";
   width: 100%;
   height: 22rem;
-  background-color: var(--pink-10);
+  background-color: var(--light-color-1);
   position: absolute;
   left: 0;
   bottom: 0;
@@ -104,7 +104,7 @@ header nav ul li a:hover {
   letter-spacing: -0.54px;
   margin-top: 2.4rem;
   margin-bottom: 3.2rem;
-  color: var(--gray-300);
+  color: var(--dark-color-3);
 }
 
 .s-hero .text .arrow {
@@ -148,8 +148,12 @@ header nav ul li a:hover {
 .s-digital ul {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid var(--gray-800);
+  border-bottom: 1px solid var(--dark-color-2);
   padding-bottom: 12.8rem;
+}
+
+.s-digital ul p{
+  font-size: 1.6rem;
 }
 
 .s-art-front {
@@ -169,9 +173,9 @@ header nav ul li a:hover {
 }
 
 .s-art-front .title-text p {
-  color: var(--gray-600);
+  color: var(--dark-color-6);
   letter-spacing: -0.54px;
-  margin-top: 1.6rem;
+  margin-top: 1.3rem;
 }
 
 .s-art-front .title-text .left {
@@ -198,7 +202,7 @@ header nav ul li a:hover {
 
 .s-newsletter {
   padding: 8.9rem 0;
-  background-color: var(--pink-10);
+  background-color: var(--light-color-1);
 }
 
 .s-newsletter .container {
@@ -239,7 +243,7 @@ footer .main-area .left {
 
 footer .main-area .left p {
   margin-top: 2.4rem;
-  color: var(--gray-600);
+  color: var(--dark-color-6);
   font-size: 1.6rem;
   line-height: 150%;
   letter-spacing: -0.48px;
@@ -265,7 +269,7 @@ footer .main-area .right .item-nav ul li:not(:last-child) {
 }
 
 footer .main-area .right .item-nav ul li a {
-  color: var(--gray-600);
+  color: var(--dark-color-6);
   font-size: 1.6rem;
   letter-spacing: -0.48px;
   transition: color 0.3s ease;
@@ -275,11 +279,11 @@ footer .main-area .right .item-nav ul li a {
 }
 
 footer .main-area .right .item-nav ul li a:hover {
-  color: var(--gray-100);
+  color: var(--dark-color-9);
 }
 
 footer .copy {
-  color: var(--gray-600);
+  color: var(--dark-color-6);
   font-size: 1.6rem;
   letter-spacing: -0.48px;
 }
@@ -288,7 +292,7 @@ footer .copy strong {
   font-weight: 600;
 }
 
-/*Até monitores pequenos*/
+/* Up to small monitors */
 @media (max-width: 1200px) {
   .s-digital {
     padding-top: 6.8rem;
@@ -316,7 +320,7 @@ footer .copy strong {
   }
 }
 
-/*Tablet*/
+/* Tablet */
 @media (max-width: 991px) {
   .s-hero::after {
     height: 13rem;
@@ -372,7 +376,7 @@ footer .copy strong {
   }
 }
 
-/*Intervalo entre tablet e celular*/
+/* Interval between tablet and mobile */
 @media (max-width: 768px) {
   header nav {
     display: none;
@@ -398,10 +402,34 @@ footer .copy strong {
     max-width: 41.6rem;
   }
 
-  .s-hero .text .arrow {
-    bottom: 3.7rem;
-    left: 2rem;
-    max-width: 6rem;
+  .s-hero .arrow {
+    display: none;
+  }
+
+  .s-hero .ilustra {
+    display: none;
+  }
+
+  .s-hero .ilustra-mobile {
+    display: block;
+  }
+
+  .s-hero::after {
+    height: 22rem;
+  }
+
+  .s-digital {
+    padding-top: 8rem;
+  }
+
+  .s-digital ul {
+    padding-top: 2rem;
+    padding-bottom: 8rem;
+    gap: 6.4rem;
+  }
+
+  .s-digital h3 {
+    font-size: 2.8rem;
   }
 
   .s-art-front .title-text h3 {
@@ -410,13 +438,13 @@ footer .copy strong {
     margin: 0 auto;
   }
   .s-art-front .title-text p {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
   }
 }
 
-/*celular*/
+/* Mobile */
 @media (max-width: 560px) {
-  body{
+  body {
     overflow-x: hidden;
   }
   header {
