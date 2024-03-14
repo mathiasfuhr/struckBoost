@@ -32,7 +32,3 @@ html {
   color: var(--dark-color-9);
 }
 
-svg fill {
-  fill: #ff0000; /* Cor de preenchimento desejada */
-}
-
