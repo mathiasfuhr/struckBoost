@@ -12,6 +12,10 @@ header .container {
   justify-content: space-between;
 }
 
+header .btn-mobile {
+  display: none;
+}
+
 header nav {
   display: flex;
   align-items: center;
@@ -99,6 +103,10 @@ header nav ul li a:hover {
 
 .s-hero .ilustra {
   padding: 0 1.5rem;
+}
+
+.s-hero .ilustra-mobile{
+  display: none;
 }
 
 .s-digital {
@@ -253,4 +261,93 @@ footer .copy {
 
 footer .copy strong {
   font-weight: 600;
+}
+
+/*Até monitores pequenos*/
+@media (max-width: 1200px) {
+}
+
+/*Tablet*/
+@media (max-width: 991px) {
+  .s-hero::after {
+    height: 13rem;
+  }
+}
+
+/*Intervalo entre tablet e celular*/
+@media (max-width: 768px) {
+  header nav {
+    display: none;
+  }
+  header .btn-mobile {
+    display: block;
+  }
+  .s-hero {
+    padding-top: 6rem;
+  }
+
+  .s-hero .text h1 {
+    max-width: 49rem;
+    margin: 0 auto;
+  }
+  .s-hero .text h1::before {
+    left: 0;
+    bottom: -0.4rem;
+    background-size: 100%;
+  }
+
+  .s-hero .text p {
+    max-width: 41.6rem;
+  }
+
+  .s-hero .text .arrow {
+    bottom: 3.7rem;
+    left: 2rem;
+    max-width: 6rem;
+  }
+}
+
+/*celular*/
+@media (max-width: 560px) {
+  header {
+    height: 7.2rem;
+  }
+
+  header .logo {
+    max-width: 16rem;
+  }
+
+  .s-hero {
+    padding-top: 8.8rem;
+  }
+
+  .s-hero .text h1 {
+    font-size: 4rem;
+  }
+
+  .s-hero .text h1::before {
+    bottom: -0.6rem;
+  }
+
+  .s-hero .text p {
+    margin-top: 0.8rem;
+    margin-bottom: 2.4rem;
+    font-size: 1.6rem;
+  }
+
+  .s-hero .arrow {
+    display: none;
+  }
+
+  .s-hero .ilustra{
+    display: none;
+  }
+
+  .s-hero .ilustra-mobile{
+    display: block;
+  }
+
+  .s-hero::after{
+    height: 22rem;
+  }
 }
