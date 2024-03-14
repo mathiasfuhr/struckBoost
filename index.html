@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Sora:wght@100..800&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/components.css" />
     <link rel="stylesheet" href="css/grid.css" />
@@ -41,7 +42,7 @@
 
     <section class="s-hero">
       <div class="container">
-        <div class="text">
+        <div class="text" data-aos="fade-right">
           <h1>Explorando o Mundo do Desenvolvimento Web</h1>
           <p>
             Descubra o poder de criar experiências digitais incríveis comigo,
@@ -51,7 +52,13 @@
           <img src="./imgs/arrow-direction-button.svg" alt="" class="arrow" />
         </div>
       </div>
-      <img src="./imgs/ilustra-hero.svg" class="ilustra" alt="" />
+      <img
+        src="./imgs/ilustra-hero.svg"
+        class="ilustra"
+        alt=""
+        data-aos="fade-up"
+        data-aos-delay="300"
+      />
       <img
         src="./imgs/ilustra-mobile.svg"
         class="ilustra-mobile"
@@ -61,9 +68,9 @@
 
     <section class="s-digital">
       <div class="container">
-        <h3>Projetos de Destaque</h3>
+        <h3 data-aos="fade-right">Projetos de Destaque</h3>
         <ul>
-          <li>
+          <li data-aos="fade-right">
             <div class="item-digital">
               <div class="icon">
                 <img src="./imgs/icon-impacto.svg" alt="" />
@@ -77,7 +84,7 @@
               </div>
             </div>
           </li>
-          <li>
+          <li data-aos="fade-up">
             <div class="item-digital">
               <div class="icon">
                 <img src="./imgs/icon-nav.svg" alt="" />
@@ -91,7 +98,7 @@
               </div>
             </div>
           </li>
-          <li>
+          <li data-aos="fade-left">
             <div class="item-digital">
               <div class="icon">
                 <img src="./imgs/icon-performance.svg" alt="" />
@@ -112,14 +119,14 @@
     <section class="s-art-front">
       <div class="container">
         <div class="title-text">
-          <div class="left">
+          <div class="left" data-aos="fade-right">
             <h3>Conheça Meus Projetos</h3>
             <p>
               Explore uma variedade de projetos criativos e funcionais
               desenvolvidos com paixão e profissionalismo.
             </p>
           </div>
-          <div class="right">
+          <div class="right" data-aos="fade-left">
             <p>
               Junte-se a mim nesta jornada emocionante de criação digital e
               descubra o potencial infinito do desenvolvimento web.
@@ -127,7 +134,7 @@
           </div>
         </div>
         <div class="all">
-          <div class="card-post">
+          <div class="card-post" data-aos="flip-left">
             <span class="tag">Projetos</span>
             <div class="image">
               <img src="./imgs/image-post.svg" alt="" />
@@ -140,7 +147,7 @@
               </p>
             </div>
           </div>
-          <div class="card-post">
+          <div class="card-post" data-aos="flip-left">
             <span class="tag">Designs</span>
             <div class="image">
               <img src="./imgs/image-post.svg" alt="" />
@@ -154,7 +161,7 @@
               </p>
             </div>
           </div>
-          <div class="card-post">
+          <div class="card-post" data-aos="flip-left">
             <span class="tag">Experiência</span>
             <div class="image">
               <img src="./imgs/image-post.svg" alt="" />
@@ -167,7 +174,7 @@
               </p>
             </div>
           </div>
-          <div class="card-post">
+          <div class="card-post" data-aos="flip-left">
             <span class="tag">Habilidades</span>
             <div class="image">
               <img src="./imgs/image-post.svg" alt="" />
@@ -180,7 +187,7 @@
               </p>
             </div>
           </div>
-          <div class="card-post">
+          <div class="card-post" data-aos="flip-left">
             <span class="tag">Certificados</span>
             <div class="image">
               <img src="./imgs/image-post.svg" alt="" />
@@ -199,7 +206,7 @@
     </section>
 
     <section class="s-newsletter">
-      <div class="container">
+      <div class="container" data-aos="zoom-out">
         <h2>Quer saber mais sobre mim e meus projetos?</h2>
         <p>
           Inscreva-se na minha newsletter e receba atualizações sobre os meus
@@ -275,5 +282,11 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000
+      });
+    </script>
   </body>
 </html>
