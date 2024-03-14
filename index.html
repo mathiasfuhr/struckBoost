@@ -31,11 +31,11 @@
         <nav>
           <ul>
             <li><a href="">Início</a></li>
-            <li><a href="">Projetos</a></li>
+            <li><a href="#projetos">Projetos</a></li>
             <li><a href="">Sobre Mim</a></li>
             <li><a href="">Contato</a></li>
           </ul>
-          <button class="btn-primary">Entre em Contato</button>
+          <a href="#projetos" class="btn-primary">Entre em Contato</a>
         </nav>
       </div>
     </header>
@@ -48,7 +48,7 @@
             Descubra o poder de criar experiências digitais incríveis comigo,
             Mathias Fuhr, especialista em desenvolvimento front-end.
           </p>
-          <button class="btn-primary lg">Veja Meus Projetos</button>
+          <a class="btn-primary lg" href="#projetos">Veja Meus Projetos</a>
           <img src="./imgs/arrow-direction-button.svg" alt="" class="arrow" />
         </div>
       </div>
@@ -68,7 +68,9 @@
 
     <section class="s-digital">
       <div class="container">
-        <h3 data-aos="fade-right">Projetos de Destaque</h3>
+        <h3 data-aos="fade-right">
+          Projetos Web com Alta Performance e Eficiência
+        </h3>
         <ul>
           <li data-aos="fade-right">
             <div class="item-digital">
@@ -116,7 +118,7 @@
       </div>
     </section>
 
-    <section class="s-art-front">
+    <section class="s-art-front" id="projetos">
       <div class="container">
         <div class="title-text">
           <div class="left" data-aos="fade-right">
@@ -212,7 +214,7 @@
           Inscreva-se na minha newsletter e receba atualizações sobre os meus
           últimos projetos, artigos e novidades do mundo do desenvolvimento web.
         </p>
-        <button class="btn-primary white lg">Inscrever-se na Newsletter</button>
+        <a class="btn-primary white lg">Inscrever-se na Newsletter</a>
       </div>
     </section>
 
@@ -286,7 +288,7 @@
     <script>
       AOS.init({
         duration: 1000,
-        disable: "mobile"
+        disable: "mobile",
       });
     </script>
   </body>

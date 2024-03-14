@@ -4,6 +4,9 @@ header {
   display: flex;
   align-items: center;
   border-bottom: 1px solid rgba(255, 255, 255, 0.24);
+  position: fixed;
+  z-index: 1000;
+  background-color: var(--gray-900);
 }
 
 header .container {
